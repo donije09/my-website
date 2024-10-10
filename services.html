@@ -1,62 +1,175 @@
-<!DOCTYPE html/>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Page :: Services</title>
+    <title>Services – Augustine Omo Idonije</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>                            
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h2 {
+            margin-top: 0;
+        }
+
+        .service-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .service-card ul li {
+            margin: 5px 0;
+            padding: 5px;
+            border-left: 4px solid #007bff;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
 <body>
     <header class="navheader">
         <div class="logoImg">
-        <img src="img/logo.png" alt="logo">
+            <img src="img/logo.png" alt="logo">
         </div>
         <nav class="page_header_item">
             <ul role="menubar" class="navlist">
                 <li role="presentation" class="navlist_item">
                     <a href="index.html" role="menuitem">Home</a>
-                 </li>
-                 <li role="presentation" class="navlist_item">
-                    <a href="about.html" role="menuitem">About Us</a>
-                 </li>
-                <li role="presentation"  class="navlist_item">
+                </li>
+                <li role="presentation" class="navlist_item">
+                    <a href="about.html" role="menuitem">About Me</a>
+                </li>
+                <li role="presentation" class="navlist_item">
                     <a href="contact.html" role="menuitem">Contact</a>
-                 </li>
-                  <li role="presentation"  class="navlist_item active">
+                </li>
+                <li role="presentation" class="navlist_item active">
                     <a role="menuitem" href="services.html">Services</a>
-                    </li>
-                    <li role="presentation"  class="navlist_item">
-                        <a role="menuitem" href="work.html">Work</a>
-                        </li>
+                </li>
+                <li role="presentation" class="navlist_item">
+                    <a href="work.html" role="menuitem">Work</a>
+                </li>
             </ul>
-        </nav>  
+        </nav>
     </header>
 
-    <div class="mainHomeDiv">      
-            <h1>Our Services</h1>
-            <h5 class="red">Core Services:</h5>
-            <p>We specialize in drawing up designs and development of software for companies involved in importing and exporting of goods like nuts, palm oil. We automate the business processed of companies as required in order to increase their revenue and save cost.</p>
-            <h5 class="red">Other Services:</h5>
-            <p>We also specialize in corporate and individual training covering the following courses:</p>
+    <div class="container">
+        <h1>My Services</h1>
+
+        <div class="service-card">
+            <h2>Web Development</h2>
+            <p>Creating responsive and user-friendly websites using modern frameworks and technologies.</p>
             <ul>
-                <li>Front-End Development using HTML, CSS and Javascript</li>
-                <li>Backend Development</li>
-                <li>Database Management and Administration</li>
-                <li>Graphics Designing</li>
-                <li>Networking</li>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Angular</li>
+                <li>Node.js, Express.js</li>
             </ul>
         </div>
-    
-<footer>
-    <p>Find Me On:</p>
-    <img src="img/twitter.png" alt="Twitter Logo"/>
-    <img src="img/linkedIn.png" alt="LinkedIn Logo"/>
-    <img src="img/instagram.png" alt="instagram Logo"/>
-</footer>
-<script src="js/tota11y.min.js"></script>
+
+        <div class="service-card">
+            <h2>API Development</h2>
+            <p>Building RESTful APIs for seamless integration with frontend applications and third-party services.</p>
+            <ul>
+                <li>Node.js and Express</li>
+                <li>MongoDB for database management</li>
+                <li>Authentication and Authorization</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h2>Mobile App Development</h2>
+            <p>Developing cross-platform mobile applications using React Native and Expo.</p>
+            <ul>
+                <li>Responsive layouts</li>
+                <li>Integration with APIs</li>
+                <li>Publishing on app stores</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h2>UI/UX Design</h2>
+            <p>Designing intuitive user interfaces that enhance user experience and engagement.</p>
+            <ul>
+                <li>Wireframing and Prototyping</li>
+                <li>Responsive Design Principles</li>
+                <li>User Research and Testing</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/donije09" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/your_handle" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/in/your_profile" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Augustine Omo Idonije. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
-<h1>
-    
-</h1>

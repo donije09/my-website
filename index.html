@@ -1,55 +1,105 @@
-<!DOCTYPE html/>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page :: Home</title>
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon" type="image/png" href="img/cvpot.jpg" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>                            
+</head>
 <body>
     <header class="navheader">
         <div class="logoImg">
-        <img src="img/logo.png" alt="logo">
+            <img src="img/logo.png" alt="logo">
         </div>
         <nav class="page_header_item">
             <ul role="menubar" class="navlist">
-                <li role="presentation" class="navlist_item active">
-                    <a href="index.html" role="menuitem">Home</a>
-                 </li>
-                 <li role="presentation" class="navlist_item">
-                    <a href="about.html" role="menuitem">About Us</a>
-                 </li>
-                <li role="presentation"  class="navlist_item">
+                <li role="presentation" class="navlist_item">
+                    <a href="index.html" role="menuitem" class="active">Home</a>
+                </li>
+                <li role="presentation" class="navlist_item">
+                    <a href="about.html" role="menuitem">About Me</a>
+                </li>
+                <li role="presentation" class="navlist_item">
+                    <a href="services.html" role="menuitem">Services</a>
+                </li>
+                <li role="presentation" class="navlist_item">
+                    <a href="work.html" role="menuitem">Work</a>
+                </li>
+                <li role="presentation" class="navlist_item">
                     <a href="contact.html" role="menuitem">Contact</a>
-                 </li>
-                  <li role="presentation"  class="navlist_item">
-                    <a role="menuitem" href="services.html">Services</a>
-                    </li>
-                    <li role="presentation"  class="navlist_item">
-                        <a role="menuitem" href="work.html">Work</a>
-                        </li>
+                </li>
             </ul>
         </nav>  
     </header>
 
-    <div class="mainHomeDiv">
-        <img src="img/favicon.png" class="imgProfile"/>
-        <h1>Hello World!</h1>
-        <h4>My name is Austin .O. Idonije</h4>
-        <p>I am a <span class="profession">Web Developer</span>, currently working with HTML and CSS!</p>
-        <p>You can reach out to me on any of my social media platforms by clicking on the icons below.</p>
-    </div>
+    <!-- Full-width hero section with space for a picture -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Augustine Omo Idonije</h1>
+            <p class="hero-subtitle">Full-stack Web Developer | Tech Enthusiast</p>
+            <a href="about.html" class="hero-btn">Learn More About Me</a>
+        </div>
+        <div class="hero-image">
+        <img src="img/cvpot.jpg" alt="cvpot.png" class="imgProfile">
+        </div>
+    </section>
 
-<footer>
-    <p>Find Me On:</p>
-    <img src="img/twitter.png" alt="Twitter Logo"/>
-    <img src="img/linkedIn.png" alt="LinkedIn Logo"/>
-    <img src="img/instagram.png" alt="instagram Logo"/>
-</footer>
-<script src="js/tota11y.min.js"></script>
+    <!-- Main content section -->
+    <section class="main-content">
+        <h2>What I Do</h2>
+        <p>I build and design web applications that solve real-world problems. From frontend to backend, I am passionate about crafting efficient, user-friendly solutions.</p>
+        <div class="services">
+            <div class="service-card">
+                <h3>Frontend Development</h3>
+                <p>Expertise in building responsive and dynamic user interfaces with modern technologies like HTML5, CSS3, and JavaScript frameworks such as Angular.</p>
+            </div>
+            <div class="service-card">
+                <h3>Backend Development</h3>
+                <p>Experienced in building robust backend systems using Node.js, Express, and databases like MySQL and MongoDB to power web applications.</p>
+            </div>
+            <div class="service-card">
+                <h3>API Integrations</h3>
+                <p>Seamless integration of RESTful APIs and third-party services to enhance the functionality of applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Projects Section -->
+    <section class="projects">
+        <h2>Recent Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>MyFlix App</h3>
+                <p>A full-stack movie application where users can register, log in, view movies, and manage their favorite movie lists.</p>
+                <a href="https://github.com/donije09/myFlix-client" class="btn-project">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>ChatApp</h3>
+                <p>A mobile chat app built with React Native, featuring real-time messaging and media sharing capabilities.</p>
+                <a href="https://github.com/donije09/chat-app" class="btn-project">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Pokedex App</h3>
+                <p>An interactive Pokedex built using JavaScript and API integration for retrieving Pokemon data.</p>
+                <a href="https://github.com/donije09/pokedex-app" class="btn-project">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Find Me On:</p>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="img/linkedIn.png" alt="LinkedIn Logo"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram Logo"></a>
+        </div>
+        <p>&copy; 2024 Augustine Omo Idonije | Fullstack Developer</p>
+    </footer>
+
+    <!-- Animation Script -->
+    <script src="js/animation.js"></script>
 </body>
 </html>
-<h1>
-    
-</h1>
