@@ -20,18 +20,19 @@
         }
 
         .card {
-            flex-basis: 31%; /* Adjust the width for 3 cards per row */
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            flex: 1;
-            transition: transform 0.2s;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 20px;
+        max-width: 400px; /* Adjust the card width */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+        width: 100%; /* Ensure the image fits the card width */
+        height: 200px; /* Set a fixed height for the image */
+        object-fit: cover; /* Make sure the image scales properly */
+        border-radius: 8px 8px 0 0;
         }
 
         .card:hover {
@@ -39,7 +40,7 @@
         }
 
         .card h3 {
-            margin-top: 0;
+            margin-top: 16px;
         }
 
         .progress-bar {
@@ -51,43 +52,50 @@
             overflow: hidden;
         }
 
-        .progress-bar div {
-            height: 100%;
-            border-radius: 20px;
+        .progress-bar {
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            margin-top: 10px;
         }
 
         .html-progress {
-            width: 70%;
-            background-color: #e34c26;
+            width: 80%;
+            height: 100%;
+            background-color: #3498db;
+            border-radius: 4px;
         }
 
         .css-progress {
-            width: 50%;
-            background-color: #264de4;
+            width: 70%;
+            height: 100%;
+            background-color: #e74c3c;
+            border-radius: 4px;
         }
-
         .js-progress {
-            width: 40%;
-            background-color: #f7df1e;
+            width: 90%;
+            height: 100%;
+            background-color: #f1c40f;
+            border-radius: 4px;
         }
 
-        .languages {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 5px;
+        .languages span {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
         }
 
         .fork-btn {
+            display: inline-block;
+            padding: 10px 20px;
             margin-top: 10px;
-            padding: 10px;
             background-color: #007bff;
             color: white;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
             text-decoration: none;
-            cursor: pointer;
-            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         .fork-btn:hover {
@@ -171,103 +179,130 @@
         
         <div class="cards-container">
             <!-- Project Card 1 -->
-            <div class="card">
-                <h3>Website Portfolio</h3>
-                <p>A personal portfolio showcasing my projects and skills as a web developer. The site features a clean design and responsive layout, allowing users to explore my work across various devices.</p>
-                <p>Technologies Used:</p>
-                <ul class="tools-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <div class="languages">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="html-progress"></div>
-                </div>
-                <a href="https://github.com/donije09/website-portfolio" target="_blank" class="fork-btn">Fork on GitHub</a>
-            </div>
+<div class="card">
+    <img src="img/myweb.png" alt="Portfolio Screenshot" />
+    <h3>Website Portfolio</h3>
+    <p>A personal portfolio showcasing my projects and skills as a web developer. The site features a clean design and responsive layout, allowing users to explore my work across various devices.</p>
+    <p>Technologies Used:</p>
+    <ul class="tools-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>              
+    </ul>
+    <div class="languages">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+    
+    <a href="https://github.com/donije09/website-portfolio" target="_blank" class="fork-btn">Fork on GitHub</a>
+    <a href="https://your-live-portfolio-link.com" target="_blank" class="fork-btn" style="background-color: #28a745;">Live Project</a>
+    
+</div>
 
-            <!-- Project Card 2 -->
-            <div class="card">
-                <h3>To Do List App</h3>
-                <p>A task management application that allows users to create, read, update, and delete tasks. It features a user-friendly interface and helps users stay organized with their daily activities.</p>
-                <p>Technologies Used:</p>
-                <ul class="tools-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <div class="languages">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="css-progress"></div>
-                </div>
-                <a href="https://github.com/donije09/to-do-list-app" target="_blank" class="fork-btn">Fork on GitHub</a>
-            </div>
+<!-- Project Card 2 -->
+<div class="card">
+    <img src="img/To Do list App.png" alt="To Do List App Screenshot" />
+    <h3>To Do List App</h3>
+    <p>A task management application that allows users to create, read, update, and delete tasks. It features a user-friendly interface and helps users stay organized with their daily activities.</p>
+    <p>Technologies Used:</p>
+    <ul class="tools-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <div class="languages">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+    <a href="https://github.com/donije09/to-do-list-app" target="_blank" class="fork-btn">Fork on GitHub</a>
+    
+</div>
 
-            <!-- Project Card 3 -->
-            <div class="card">
-                <h3>githu001.js</h3>
-                <p>A JavaScript library that simplifies working with GitHub APIs. It provides an easy-to-use interface for developers to access GitHub data, enhancing productivity and integration.</p>
-                <p>Technologies Used:</p>
-                <ul class="tools-list">
-                    <li>JavaScript</li>
-                </ul>
-                <div class="languages">
-                    <span>JavaScript</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="js-progress"></div>
-                </div>
-                <a href="https://github.com/donije09/githu001.js" target="_blank" class="fork-btn">Fork on GitHub</a>
-            </div>
+<!-- Project Card 3 -->
+<div class="card">
+    <img src="img/pokomon App.png" alt="githu001.js Screenshot" />
+    <h3>Pokemon App</h3>
+    <p>#simple app this is a simple app designed encourage the understand of individual emotional requirement. Features button to press understanding where ones interest lie and what makes a lot to the physical wellbeing if the user. pyramid structure of man needs from bottom up. Files index.html style.css scripts.js. How to run how to operate</p>
+    <p>Technologies Used:</p>
+    <ul class="tools-list">
+        <li>JavaScript</li>
+    </ul>
+    <div class="languages">
+        <span>JavaScript</span>
+    </div>
+    
+    <a href="https://github.com/donije09/githu001.js" target="_blank" class="fork-btn">Fork on GitHub</a>
+    <a href="https://donije09.github.io/githu001.js/" target="_blank" class="fork-btn" style="background-color: #28a745;">Live Project</a>
+    
+</div>
 
-            <!-- Project Card 4 -->
-            <div class="card">
-                <h3>myFlix Client</h3>
-                <p>A movie streaming application where users can browse and manage their favorite films. This client-side application integrates with a backend API to provide a seamless user experience.</p>
-                <p>Technologies Used:</p>
-                <ul class="tools-list">
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>MongoDB</li>
-                </ul>
-                <div class="languages">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="html-progress"></div>
-                </div>
-                <a href="https://github.com/donije09/myFlix-client" target="_blank" class="fork-btn">Fork on GitHub</a>
-            </div>
+<!-- Project Card 4 -->
+<div class="card">
+    <img src="img/myflix App.png" alt="myFlix Client Screenshot" />
+    <h3>myFlix Client</h3>
+    <p>A movie streaming application where users can browse and manage their favorite films. This client-side application integrates with a backend API to provide a seamless user experience.</p>
+    <p>Technologies Used:</p>
+    <ul class="tools-list">
+        <li>React</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+    </ul>
+    <div class="languages">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+    </div>
+    
+    <a href="https://github.com/donije09/myFlix-client" target="_blank" class="fork-btn">Fork on GitHub</a>
+    <a href="https://main--endearing-marshmallow-d13361.netlify.app/" target="_blank" class="fork-btn" style="background-color: #28a745;">Live Project</a>
+    
+</div>
 
-            <!-- Project Card 5 -->
-            <div class="card">
-                <h3>Movie API</h3>
-                <p>A RESTful API for managing a movie database, allowing users to create, retrieve, update, and delete movie records. This API serves as the backend for various movie-related applications.</p>
-                <p>Technologies Used:</p>
-                <ul class="tools-list">
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                </ul>
-                <div class="languages">
-                    <span>JavaScript</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="js-progress"></div>
-                </div>
-                <a href="https://github.com/donije09/movie-api" target="_blank" class="fork-btn">Fork on GitHub</a>
-            </div>
+<!-- Project Card 5 -->
+<div class="card">
+    <img src="img/mongoDB.png" alt="Movie API Screenshot" />
+    <h3>Movie API</h3>
+    <p>A RESTful API for managing a movie database, allowing users to create, retrieve, update, and delete movie records. This API serves as the backend for various movie-related applications.</p>
+    <p>Technologies Used:</p>
+    <ul class="tools-list">
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>MongoDB</li>
+    </ul>
+    <div class="languages">
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+    </div>
+    
+    <a href="https://github.com/donije09/movie-api" target="_blank" class="fork-btn">Fork on GitHub</a>
+    <a href="https://github.com/donije09/movieAPI" target="_blank" class="fork-btn" style="background-color: #28a745;">Live Project</a>
+    
+</div>
+<!-- Project Card 6 -->
+<div class="card">
+    <img src="img/meet-app.png" alt="Movie API Screenshot" />
+    <h3>Meet App</h3>
+    <p>A RESTful API for managing a movie database, allowing users to create, retrieve, update, and delete movie records. This API serves as the backend for various movie-related applications.</p>
+    <p>Technologies Used:</p>
+    <ul class="tools-list">
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>MongoDB</li>
+    </ul>
+    <div class="languages">
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+    </div>
+    
+    <a href="https://github.com/donije09/meet" target="_blank" class="fork-btn">Fork on GitHub</a>
+    <a href=" https://donije09.github.io/meet/" target="_blank" class="fork-btn" style="background-color: #28a745;">Live Project</a>
+    
+</div>
+
         </div>
     </div>
 
